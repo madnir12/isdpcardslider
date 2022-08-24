@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 700;
+    background-color: black;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.slideshow{
+    display: grid;
+    grid-auto-flow: column;
+    width: 80%;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    overflow: auto;
+    margin: auto;
+    
+}
+.slide{
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    padding: 70px 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFE-W98RM5cYfnuWZuU2ax7-YM2CdnLurMtg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+}
+.slide h1,.slide h4{
+    font-family: jameel noori nastaleeq ;
+    color: blue;
+    text-align: center;
+}
+.slide h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slide img{
+    border: 6px solid yellow;
+    border-radius: 100%;
+    width: 150px;
+}
+.slide button{
+    background-color: blue;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width:944px){
+    .slideshow{
+        width: 94%;
+    }
+}
