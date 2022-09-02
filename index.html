@@ -1,95 +1,131 @@
-<!DOCTYPE html>
+--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="slideshow">
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/3.jpeg" alt="">
-            <h1>ندیم غفور چودری</h1>
-            <h4>Assistant Professor
-                CIIT Department of Computer Science
-                </h4>
-                <button>Profile</button>
+   
+     <!-- Swiper -->
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <img src="./images/1.jpeg" alt="">
+                <h1>ندیم غفور چودری</h1>
+                <h4>Assistant Professor
+                    CIIT Department of Computer Science
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
+            <div class="swiper-slide slide">
+                <img src="./images/2.jpeg" alt="">
+                <h1>
+                    عبد المتین
+                </h1>
+                <h4>
+                    Lecturer Punjab University
+                    PUCIT Department of Computer Science
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
+            <div class="swiper-slide slide">
+                <img src="./images/3.png" alt="">
+                <h1>
+                    مولانا حق نواز
+                </h1>
+                <h4>
+                    MSCS Schollar UCP
+                    Intensive Software Develoment Program
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
+            <div class="swiper-slide slide">
+                <img src="./images/4.jpg" alt="">
+                <h1>
+                    عبد القیوم
+                </h1>
+                <h4>
+                    Sr. English Teacher
+                    CEO & Trainer at "Training Wizards"
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
+            <div class="swiper-slide slide">
+                <img src="./images/5.png" alt="">
+                <h1>
+                    ڈاکٹر فیضان احمد
+                </h1>
+                <h4>
+                    Assistant Professor
+    CIIT Department of Computer Science
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
+            <div class="swiper-slide slide">
+                <img src="./images/6.png" alt="">
+                <h1>
+                    ڈاکٹر اکثم افتخار
+                </h1>
+                <h4>
+                    Assistant Professor
+    CIIT Department of Computer Science
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
+            <div class="swiper-slide slide">
+                  <img src="./images/7.png" alt="">
+                <h1>
+                    ڈاکٹر احمد علی بادات
+                </h1>
+                <h4>
+                    Lecturer
+                    Govt. College of Science, Lahore
+                    </h4>
+                    <button>Profile</button>
+    
+            </div>
 
         </div>
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/2.jpeg" alt="">
-            <h1>
-                عبد المتین
-            </h1>
-            <h4>
-                Lecturer Punjab University
-                PUCIT Department of Computer Science
-                </h4>
-                <button>Profile</button>
+        
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        </div>
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/1.png" alt="">
-            <h1>
-                مولانا حق نواز
-            </h1>
-            <h4>
-                MSCS Schollar UCP
-                Intensive Software Develoment Program
-                </h4>
-                <button>Profile</button>
-
-        </div>
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/5.jpg" alt="">
-            <h1>
-                عبد القیوم
-            </h1>
-            <h4>
-                Sr. English Teacher
-                CEO & Trainer at "Training Wizards"
-                </h4>
-                <button>Profile</button>
-
-        </div>
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/Dr_Faizan_Ahmad.png" alt="">
-            <h1>
-                ڈاکٹر فیضان احمد
-            </h1>
-            <h4>
-                Assistant Professor
-CIIT Department of Computer Science
-                </h4>
-                <button>Profile</button>
-
-        </div>
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/Aksam_Iftikhar.png" alt="">
-            <h1>
-                ڈاکٹر اکثم افتخار
-            </h1>
-            <h4>
-                Assistant Professor
-CIIT Department of Computer Science
-                </h4>
-                <button>Profile</button>
-
-        </div>
-        <div class="slide">
-            <img src="http://www.isdp.info/images/faculty/Ahmad_Ali.png" alt="">
-            <h1>
-                ڈاکٹر احمد علی بادات
-            </h1>
-            <h4>
-                Lecturer
-                Govt. College of Science, Lahore
-                </h4>
-                <button>Profile</button>
-
-        </div>
-    </div>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+    <script src="./scripts/swiper.js"></script>
 </body>
 </html>
